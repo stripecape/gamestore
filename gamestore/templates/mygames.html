@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Register a game </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+  integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+  crossorigin="anonymous">
+
+</head>
+</body>
+<center>
+  <br>
+  {% for game in mygames %}
+  <div>
+      <form action="{% url 'playgame' %}" method="post">
+        {% csrf_token %}
+        <input type="number" name="game_id" value="{{game.id}}" hidden=True>
+        <button type="submit" class="btn" id="{{game.id}}">{{game.game_name}}</button>
+
+      </form>
+  </div>
+  <br>
+  {% endfor %}
+<center>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Register </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+  integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+  crossorigin="anonymous">
+
+</head>
+</body>
+  <br>
+  <div class="container" id="register">
+    <h1> Welcome </h1>
+    <form method="post" id="registerform">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input class="btn btn-default" type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Pelikaupan testi</title>
+  <meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+  integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'gamestore/store.css' %}" />
+</head>
+<body>
+  <center>
+    <div>
+      <h1> {{game.game_name}} </h1>
+    </div>
+    <div>
+      <h5> {{game.info}} </h5>
+    </div>
+    <iframe WIDTH=1000 HEIGHT=1000 src="{{game.game_url}}"></iframe>
+  </center>
+</body>
+</html>

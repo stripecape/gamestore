@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Log In </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+  integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+  crossorigin="anonymous">
+</head>
+</body>
+<br>
+  <div class="container" id="login">
+    <h1> Game Store </h1>
+    <form method="post" id="loginform">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input class="btn btn-default" type="submit" value="Submit"><br>
+      Not registered?
+      <a href="{% url 'register' %}"> Click here </a>
+  </div>
+</body>
+</html>

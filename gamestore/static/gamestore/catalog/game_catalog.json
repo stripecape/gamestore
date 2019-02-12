@@ -1,0 +1,57 @@
+[{
+"name" : "Sudoku Shooter",
+"info" : "Instructions of the game: Game starts automatically as the page is loaded. The goal of the game is to solve sudokus. The game gives you numbers and you need to shoot them into place using the mouse. You get 3 lives for each puzzle and the game ends when you run out of lives. You have 5 seconds to find a place for each number. You lose a life if the timer runs out or you miss 4 times in a row. Running out of time and wrong guesses also cause you to lose points. Puzzles get progressively harder as you complete them. The later puzzles will require some guessing. Saving the game only saves the current score, difficulty and remaining lives, the puzzles themselves are not saved. The game is done entirely in HTML/CSS/JavaScript, without using any game development frameworks or external libraries such as jQuery. I'd love to hear your thoughts about the game on Slack! NOTE: The game probably looks weird if you don't embed it in a reasonably sized iframe (or resize the iframe according to the SETTING message). A version that's inside an iframe already can be found at https://andriamanitra.github.io/games/Sudoku/",
+"url" : "https://andriamanitra.github.io/games/Sudoku/game.html"
+},
+{
+"name" : "Swat_Kats revisited",
+"info" : "Instructions of the game: Game playing instructions are in the game.Move the plane with arrow keys and shoot using space bar. Avoid colliding with the enemies. Also going in close proximity to the dark cloud causes gameover.",
+"url" : "https://cdn.rawgit.com/Shaptarshi-Basu/flightGame/f10e93bc/game.html"
+},
+{
+"name" : "Click the Square",
+"info" : "http://frightening-drink.surge.sh/",
+"url" : "Instructions of the game: Instructions can be found at the game page."
+},
+
+{
+"name" : "Pong",
+"info" : "Instructions of the game: Up and down arrows move the block representing the player's bat on the left. A simple ai plays against the player on the right. The ball's speed increases on each horizontal direction change.",
+"url" : "https://milanfin.github.io/pong.html"
+},
+{
+"name" : "Breakout",
+"info" : "Instructions of the game: A simple breakout game where the player aims to remove all blocks from the game board. This is done by hitting them with the ball. The ball can be bounced back with the paddle on the bottom of the game board. The paddle can be moved with arrow keys. The direction the ball bounces to can be altered by using the left or right third of the paddle. Once all blocks are cleared from the board, new blocks will spawn and a new level will start. The game ends when the ball crosses the line on the bottom of the game board. Game can be paused by pressing '
+P'.",
+"url" : "https://eki95.github.io/jsGame/jsGame.html"
+},
+{
+"name" : "Tom and Jerry",
+"info" : "Instructions of the game: Eat as much as you can while running away from Tom. Your score will be saved automatically after eating cheese. You can also save the game by clicking anywhere on the screen. Wish you luck!!!",
+"url" : "https://niloufarvalinejad.github.io/"
+},
+{
+"name" : "Single player pong",
+"info" : "Instructions of the game: Instructions of the game: Do not let the ball pass your paddle. The ball's speed increases on each paddle hit. The paddle can be moved with left and right arrow keys.",
+"url" : "http://www.students.tut.fi/~salmin23/Single_player_pong.html"
+},
+{
+"name" : "The Snake",
+"info" : "Instructions of the game:",
+"url" : "https://cdn.rawgit.com/niskaman/wsd18/05a710bc/snake4.html"
+},
+{
+"name" : "Super Complex And Original Game",
+"info" : "Instructions of the game: Jump till you die, then jump more",
+"url" : "https://cdn.rawgit.com/Cunen/McDonaldsGames/f16e1fbd/Game.html"
+},
+{
+"name" : "Math game",
+"info" : "Instructions of the game: Game is simple. Start by pressing 'New problem' where you are presented with new problem where you calculate sum of two numbers. Check your solution with 'Check' and you are presented with results. Points you get are 10 pts times winstreak. So first right answer is 10 points second is 20 and so on. You can press save, which saves score and winstreak. You can also load state, if you have database which stores and handles your save data. Submit score sends out current score.",
+"url" : "https://math-game-site.herokuapp.com/math_game.html"
+},
+{
+"name" : "Space Waifus Lite",
+"info" : "Instructions of the game: A super simple dating simulator based on the hit game Space Waifus",
+"url" : "https://hot-gun.surge.sh/"
+}]

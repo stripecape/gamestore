@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Pelikaupan testi</title>
+  <meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+  integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'gamestore/store.css' %}" />
+</head>
+<body>
+  <center>
+    <form action="https://simplepayments.herokuapp.com/pay/" method="POST">
+    <input type="hidden" name="pid" value={{gamepurchase.pid}} />
+    <input type="hidden" name="sid" value={{gamepurchase.sid}} />
+    <input type="hidden" name="success_url"
+            value="https://young-river-70675.herokuapp.com/" />
+    <input type="hidden" name="cancel_url"
+            value="https://young-river-70675.herokuapp.com/" />
+    <input type="hidden" name="error_url"
+            value="https://young-river-70675.herokuapp.com/" />
+    <input type="hidden" name="checksum"
+            value={{gamepurchase.checksum}} />
+
+    <label for="id_amount">Amount</label>
+    <input type="text" id="id_amount" name={{gamepurchase.amount}} value="5" />
+    <input type="submit" value="Accept Payment"/>
+</form>
+  </center>
+</body>
+</html>
